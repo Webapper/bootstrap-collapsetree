@@ -1,0 +1,32 @@
+.collapse-tree ul {
+	list-style: none;
+	padding-left: 15px;
+}
+.collapse-tree li {
+	margin: 2px 0;
+}
+.collapse-tree li .row {
+	padding: 3px;
+}
+.collapse-tree li .row:hover,
+.collapse-tree li .row.selected {
+	background: #d9d9d9;
+}
+.collapse-tree li .row .collapse-tree-item-name {
+	cursor: pointer;
+}
+.collapse-tree li .row .collapse-tree-item-controls {
+	text-align: right;
+}
+.collapse-tree li[aria-expanded="false"] > .row .collapse-tree-state-collapsed {
+	display: inline-block;
+}
+.collapse-tree li[aria-expanded="false"] > .row .collapse-tree-state-expanded {
+	display: none;
+}
+.collapse-tree li[aria-expanded="true"] > .row .collapse-tree-state-collapsed {
+	display: none;
+}
+.collapse-tree li[aria-expanded="true"] > .row .collapse-tree-state-expanded {
+	display: inline-block;
+}
